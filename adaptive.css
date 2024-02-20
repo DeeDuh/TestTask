@@ -1,0 +1,372 @@
+@media only screen and (min-width: 1920px){
+.container,.container_footer{
+    background-size: cover; /*позволит заполнить всю область блока картинкой без повторения*/
+    margin: 0 100px auto 400px;
+} 
+.header_body hr{
+    max-width: 1920px;
+}
+}
+@media only screen and (max-width: 1440px){
+.content,.container,.swiper,.footer,.container_footer,.footer_top,.footer_bottom{
+    max-width: 1440px;
+}
+.container_footer,.footer{
+    margin: 0;
+}
+.header_info{
+    margin-left: -50px;
+}
+.header_menu,.items{
+    margin-left: 100px;
+}
+.hrat,.rations,.aboutUs,.map{
+    margin-left: 130px; 
+}
+.date{
+    grid-gap: 1080px;
+}
+} 
+
+@media only screen and (max-width: 1024px){
+.content,.container,.swiper,.footer_top,.footer_bottom{
+    max-width: 1024px;
+}
+.slide_text{
+    margin-left: 200px
+}
+.items{
+    margin-left: 50px;
+    width: 1024px;
+}
+.item{
+    width: 200px;
+}
+.item img{
+    margin-left: 50px;
+}
+.rations{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 50px;
+}
+.hrat{
+    margin-left: 50px;   
+}
+.choose{
+    justify-content:left;
+}
+.btn_ration{
+    margin-left: 80px;
+}
+.container_footer,.footer{
+    margin: 0;
+}
+.header_info{
+    margin-left: -150px;
+}
+.header_menu,.items{
+    margin-left: -10px;
+}
+.aboutUs,.map{
+    margin-left: 3px; 
+}
+.aboutUs_text{
+    margin-left: 10px;
+}
+.aboutUs_text p{
+    width: 344px;
+}
+.map{
+    max-width: 1003px;
+}
+.map img{
+    margin-left: 2px;
+    width: 494px;
+}
+.date{
+    grid-gap: 500px;
+}
+.footer,.container_footer{
+    max-width: 1010px;
+}
+} 
+
+@media only screen and (max-width: 768px){
+/* При открытом меню блокируется прокрутка текста: */
+    body.lock{
+        overflow: hidden;
+    }
+    .header_body{
+        height: 50px;
+    }
+    .header_logo{
+        flex: 0 0 40px;
+    }
+    .header_burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        left: 50px;
+        top: 30px;
+    }
+    .header_burger span{
+        position: absolute;
+        background-color: black;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+/* Рисуем линии бургера:    */
+    .header_burger::before,
+    .header_burger::after{
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }  
+    .header_burger::before{
+        top: 0;
+    } 
+    .header_burger::after{
+        bottom: 0;
+    }
+    .header_burger.active::before{
+        transform: rotate(45deg);
+        top: 9px
+    }
+    .header_burger.active span{
+        transform: scale(0);
+    }
+    .header_burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header_menu{
+        max-width: 768px;
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+/* Чтобы телефон открывал со всех положений нормально: */
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+        background-color: #18b5a4;
+        padding: 70px 10px 20px 10px;
+    }
+    .header_menu.active{
+        top: 0;
+    }
+    .header_list{
+        display: block;
+    }
+    .header_list li{
+        margin: 0px 0px 20px 0px;
+    }
+    .header_link{
+        font-size: 24px;
+    }
+    .header_info{
+        margin-left: 10px;
+    }
+    .header_top li{
+        padding-left: 50px;
+    }
+.content,.container,.swiper,.footer_top,.footer_bottom{
+    max-width: 768px;
+}
+.slide_text{
+    margin-left: 100px
+}
+.items{
+    margin-left: 70px;
+    width: 768px;
+}
+.item{
+    width: 150px;
+}
+.item img{
+    margin-left: 30px;
+}
+.rations{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 50px;
+}
+.hrat{
+    margin-left: 50px;   
+}
+.choose{
+    justify-content:left;
+}
+.btn_ration{
+    margin-left: 80px;
+}
+.container_footer,.footer{
+    margin: 0;
+}
+.header_info{
+    margin-left: -150px;
+}
+.header_menu,.items{
+    margin-left: -10px;
+}
+.aboutUs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.aboutUs img{
+    margin-left: 50px;
+}
+.aboutUs h2{
+    margin-left: 320px;
+}
+.aboutUs_text p{
+    margin-left: 180px;
+}
+.map{
+    margin-left: 0px; 
+    max-width: 760px;
+}
+.map h2,.map p{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.map p{
+    width: 237px;
+}
+.aboutUs_text{
+    margin-left: 10px;
+}
+.aboutUs_text p{
+    width: 344px;
+}
+.map img{
+    margin-left: 2px;
+    width: 450px;
+}
+.date{
+    grid-gap: 300px;
+}
+.btn{
+    margin-top: 10px;
+}
+.footer_top li{
+    margin-left: 20px;
+}
+.footer_bottom{
+    margin-left: 10px;
+}
+.footer,.container_footer{
+    max-width: 1010px;
+}
+.footer hr{
+    width: 765px;
+}
+} 
+/*********************425*************************/
+@media only screen and (max-width: 425px){
+/************Общие:***********************/
+
+
+}
+/**********************325px************************/
+@media only screen and (max-width: 375px){
+
+
+}
+
+
+
+
+@media only screen and (max-width: 767px){
+/* При открытом меню блокируется прокрутка текста: */
+    body.lock{
+        overflow: hidden;
+    }
+    .header_body{
+        height: 50px;
+    }
+    .header_logo{
+        flex: 0 0 40px;
+    }
+    .header_burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+    .header_burger span{
+        position: absolute;
+        background-color: black;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+/* Рисуем линии бургера:    */
+    .header_burger::before,
+    .header_burger::after{
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }  
+    .header_burger::before{
+        top: 0;
+    } 
+    .header_burger::after{
+        bottom: 0;
+    }
+    .header_burger.active::before{
+        transform: rotate(45deg);
+        top: 9px
+    }
+    .header_burger.active span{
+        transform: scale(0);
+    }
+    .header_burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header_menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+/* Чтобы телефон открывал со всех положений нормально: */
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+        background-color: #18b5a4;
+        padding: 70px 10px 20px 10px;
+    }
+    .header_menu.active{
+        top: 0;
+    }
+    .header_list{
+        display: block;
+    }
+    .header_list li{
+        margin: 0px 0px 20px 0px;
+    }
+    .header_link{
+        font-size: 24px;
+    }
+.content{
+        padding: 70px 0px 0px 0px;
+    }
+}

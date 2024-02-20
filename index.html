@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Test">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<title>Test</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+</head>
+<body>
+<div class="wrapper">
+  <!--Контент-->
+  <header class="header">
+    <div class="container">   
+      <div class="header_body">
+        <div class="header_info">      
+          <ul class="header_top">
+            <li><a href="#" class="header_logo">
+                <img src="img/logo.png" alt="logo"height="36px"></a></li>
+            <li><img src="img/geolocation.png" alt="geolocation"width="12.33px"height="15.55px">&nbsp;Тамбов</li>
+            <li><img src="img/phone.png" alt="phone"width="16px"height="15.55px">&nbsp;+7 (915) 660 09-09</li>
+            <li><img src="img/clock.png" alt="clock"width="16px"height="16px">&nbsp;09:00-21:00</li>       
+          </ul>
+          </div>
+<hr> 
+      <div class="header_burger">
+        <span></span>
+      </div>
+      <nav class="header_menu">
+        <ul class="header_list">
+          <li><a href="#" class="header_link">Меню ресторана</a></li>
+          <li><a href="#" class="header_link">Бизнес ланч</a></li>
+          <li><a href="#" class="header_link">Детокс</a></li>
+          <li><a href="#" class="header_link">Рационы</a></li>
+        </ul>
+        <div class="basket"><img src="img/basket.png" alt="basket"width="45px"height="36px">Корзина</div>
+      </nav>
+      </div>     
+    </div>
+  </header>
+
+<div class="content">
+  <div class="container">
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" style="background-image: url(img/owl1.png)">
+    <div class="slide_text">
+      <span class="green">Детокс-</span><span class="black">программа</span>   
+      <div id="swiper_text">комплексного очищения организма от 1099 руб</div>
+        <div id="btn_slide">
+            <a href="#swiper__link"class="scrollto">Заказать</a> 
+        </div>
+    </div>
+    </div>
+    <div class="swiper-slide"><img src="img/owl2.jpg" alt="detox"width="1820px"height="700px"></div>
+    <div class="swiper-slide"><img src="img/owl1.png" alt="detox"width="1820px"height="700px"></div>
+    <div class="swiper-slide"><img src="img/owl2.jpg" alt="detox"width="1820px"height="700px"></div>   
+  </div>
+  <!-- <div class="swiper-navigation"> -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <img src="img/champ.png" alt="champignons">
+    <p>Используем только натуральные продукты, блюда без консервантов и искусственных добавок.
+</p>
+  </div>
+  <div class="item">
+    <img src="img/apple.png" alt="apple">
+    <p>Сбалансированное <br>здоровое меню,<br> соответствующее КБЖУ.
+</p>
+  </div>
+  <div class="item">
+    <img src="img/time.png" alt="time">
+    <p>По желанию подберем программу тренировок и составим индивидуальное КБЖУ для любого уровня подготовки.
+</p>
+  </div>
+  <div class="item">
+    <img src="img/spoon.png" alt="spoon">
+    <p>Бесплатная доставка, чтобы сэкономить массу времени и сил для более важных и приятных дел.</p>
+  </div>
+</div>
+
+<h2 class="hrat">Рационы</h2>
+<div class="rations"> 
+  <div class="item_ration">
+    <img src="img/lanch1.png" alt="lanch1">
+    <h3>баланс</h3>
+    <p>Здоровое питание на каждый день для тех, кто заботится о своем ежедневном рационе.</p>
+  <div class="calories">~1800ккал</div>
+    <div class="choose">
+    <div class="ru">1190 &#8381;</div>
+    <button class="btn_ration">Выбрать</button>
+  </div>   
+</div>
+
+  <div class="item_ration">
+    <img src="img/lanch2.png" alt="lanch2">
+    <h3>лайт</h3>
+    <p>Четырехразовое меню для похудения, поддержания формы и создания рельефа.</p>
+    <div class="calories">~1400ккал</div>
+  <div class="choose">
+    <div class="ru">1050 &#8381;</div>
+    <button class="btn_ration">Выбрать</button>
+  </div>
+  </div>
+
+  <div class="item_ration">
+    <img src="img/lanch3.png" alt="lanch3">
+    <h3>супер лайт</h3>
+    <p>Быстрое похудение и поддержание формы. Трехразовое меню для быстрого снижения веса без спорта.</p>
+  <div class="calories">~900ккал</div>
+    <div class="choose">
+    <div class="ru">890 &#8381;</div>
+    <button class="btn_ration">Выбрать</button>
+  </div>
+  </div>
+
+  <div class="item_ration">
+    <img src="img/lanch4.png" alt="lanch4">
+    <h3>масс</h3>
+    <p>Сбалансированное питание для поддержания оптимальной формы при тренировках.</p>
+  <div class="calories">~1800ккал</div>
+  <div class="choose">
+    <div class="ru">1490 &#8381;</div>
+    <button class="btn_ration">Выбрать</button>
+  </div>
+</div>
+</div>
+
+<div class="aboutUs">
+  <img src="/img/chef.png" alt="chef"width="653px"height="466px"border-radius="14px">
+  <div class="aboutUs_text">
+    <h2>о нас</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Nisi, neque, et leo nulla nisl. Neque parturient elementum habitasse
+      etiam nec. Fermentum justo nam nibh vitae pellentesque integer. 
+      Imperdiet habitant tortor est amet tortor viverra. Nulla eget commodo,
+      adipiscing arcu in et risus in. </p>
+      <!-- <br> -->
+    <p>Cras eu molestie consectetur amet at euismod. 
+      Nunc elementum lorem pharetra cursus risus eu. 
+      Ac feugiat arcu etiam eget sem urna tincidunt lacus.
+      Nec morbi ultrices nulla accumsan adipiscing. 
+      Elementum sagittis eu placerat non molestie luctus gravida.
+      Risus laoreet nunc lectus orci. Vitae at augue sagittis.
+      Sed faucibus ultrices elementum faucibus varius leo, vitae.
+      Molestie semper habitant varius eleifend nisi faucibus.
+  </p>
+  </div>
+</div>
+
+<div class="map" id="swiper__link">
+  <div class="map_text">
+    <h2>Условия ДОСТАВКИ</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, neque, et leo nulla nisl. Neque parturient elementum habitasse etiam nec.
+    </p>
+    <p>Fermentum justo nam nibh vitae pellentesque integer. Imperdiet habitant tortor est amet tortor viverra. </p>
+<a class="open_modal" href="#open"><div class="btn_map">Связаться с нами</div> </a>
+<div id="modal" class="modal bounceIn">
+	<div id="close_modal">+</div>
+	<div class="modal_txt">
+<form name="form" action="https://formspree.io/f/{form_id}" method="post" id="form_message">
+		<div class="form_h">Форма обратной связи</div>
+
+		<div class="titles">Ваше имя <span>*</span> </div>
+        <input class="input"id="name" name="name" type="text"/>	 
+
+      <label for="phone"class="titles">Телефон <span>*</label>
+      <!-- <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /> -->
+      <input
+      type="text"
+      name="phone"
+      id="phone"
+      placeholder="+7(000)000-00-00" />
+<input class="btn" value="Отправить" type="submit" />
+<div class="form_top">
+  <div class="form_end">Нажимая на кнопку, вы соглашаетесь на обработку</div> 
+    <a href="#">персональный данных</a>
+  </p>
+</div>
+  </form> 
+  </div>
+</div>
+  </div>
+  <img src="img/map.png" alt="map"width="582px"height="466px">
+</div>
+  </div>
+    </div>
+
+
+<div class="container_footer">
+  <div class="footer">
+    <ol class="footer_top">
+        <li><a href="#" class="header_logo">
+                <img src="img/logo2.png" alt="logo"height="36px"></a></li>
+        <ul>
+            <li>Контакты</li>
+            <li>О компании</li>
+        </ul>
+        <ul>
+            <li>Оплата</li>
+            <li>Доставка</li>
+        </ul>
+          <ul>
+            <li>Публичная оферта</li>
+            <li>Политика конфиденциальности</li>
+          </ul>
+        </ol>
+<hr>
+    <div class="footer_bottom">
+      <div class="date">
+        <div id="year">&copy;2022</div>
+        <a href="https://www.instagram.com/"><img src="/img/insta.png" alt="instagram"></a>
+      </div>
+      <p>Мы используем cookies для быстрой и удобной работы сайта. Продолжая пользоваться сайтом, вы принимаете условия обработки персональных данных</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="https://unpkg.com/imask"></script>
+<script src="jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
